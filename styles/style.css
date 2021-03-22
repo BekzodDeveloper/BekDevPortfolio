@@ -24,7 +24,7 @@ html body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 23px;
-  color: #ff7300;
+  color: #07071d;
   margin: 0 auto;
 }
 
@@ -75,5 +75,40 @@ html body .header__inner .menu__items .menu__item-link {
 
 html body .header__inner .menu__items .menu__item-link:hover {
   border: 2px solid transparent;
+}
+
+html body .main {
+  padding-top: 100px;
+}
+
+html body .main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .main__inner .main__content {
+  max-width: 50%;
+}
+
+html body .main__inner .main__content .main__title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+html body .main__inner .main__content .download-btn {
+  color: #07071d;
+  font-size: 20px;
+  background-color: #ff7300;
+  padding: 10px 20px;
+  font-weight: 500;
+  line-height: 29px;
 }
 /*# sourceMappingURL=style.css.map */

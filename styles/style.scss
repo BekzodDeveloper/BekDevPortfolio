@@ -24,7 +24,7 @@ html {
         font-family: $default_font;
         font-weight: 400;
         line-height: 23px;
-        color: $brand;
+        color: $font;
         margin: 0 auto;
 
         .header {
@@ -55,17 +55,41 @@ html {
                                 padding: 10px 15px;
                                 margin: 0 5px;
                                 border: 2px solid $brand;
-                                // border-bottom: 1px solid $brand;
-                                // border-right: 1px solid $brand;
 
                                 transition: all 0.5s;
                                 &:hover {
                                     border: 2px solid transparent;
-                                    // border-top: 2px solid $brand;
-                                    // border-bottom: 2px solid $brand;
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        .main{
+            padding-top: 100px;
+            &__inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // padding-top: 50px;
+                .main__content{
+                    max-width: 50%;
+                    .main__title{
+                        font-size: 44px;
+                        font-weight: 700;
+                        line-height: 60px;
+                    }
+                    .main__text{
+
+                    }
+                    .download-btn{
+                        color: $font;
+                        font-size: 20px;
+                        background-color: $brand;
+                        padding: 10px 20px;
+                        font-weight: 500;
+                        line-height: 29px;
                     }
                 }
             }
