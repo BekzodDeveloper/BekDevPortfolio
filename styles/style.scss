@@ -2,6 +2,7 @@ $default_font: "Ubuntu", sans-serif;
 $wall: #0c0c22;
 $brand: #ff7300;
 $font: #07071d;
+$white: #fdfdfd;
 
 html {
     box-sizing: border-box;
@@ -11,7 +12,7 @@ html {
         box-sizing: inherit;
     }
     .container {
-        max-width: 1220px;
+        max-width: 1032px;
         padding: 0 10px;
         margin: 0 auto;
     }
@@ -35,30 +36,32 @@ html {
             right: 0;
             z-index: 1;
 
-            &__inner {
-                height: 100px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            &__container {
+                .header__inner {
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                .menu {
-                    &__items {
-                        display: flex;
-                        justify-content: space-around;
-                        .menu__item {
-                            list-style: none;
+                    .menu {
+                        &__items {
+                            display: flex;
+                            justify-content: space-around;
+                            .menu__item {
+                                list-style: none;
 
-                            &-link {
-                                font-weight: 500;
-                                font-size: 20px;
-                                color: $brand;
-                                padding: 10px 15px;
-                                margin: 0 5px;
-                                border: 2px solid $brand;
+                                &-link {
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    color: $brand;
+                                    padding: 10px 15px;
+                                    margin: 0 5px;
+                                    border: 2px solid $brand;
 
-                                transition: all 0.5s;
-                                &:hover {
-                                    border: 2px solid transparent;
+                                    transition: all 0.5s;
+                                    &:hover {
+                                        border: 2px solid transparent;
+                                    }
                                 }
                             }
                         }
@@ -66,31 +69,49 @@ html {
                 }
             }
         }
-        .main{
+        .main {
             padding-top: 100px;
-            &__inner{
+            &__inner {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                // padding-top: 50px;
-                .main__content{
+                padding-top: 100px;
+                .main__content {
                     max-width: 50%;
-                    .main__title{
+                    .main__title {
                         font-size: 44px;
                         font-weight: 700;
                         line-height: 60px;
+                        padding-bottom: 40px;
+                        margin: 0;
+                        &-orange{
+                            color: #ff7300;
+                        }
                     }
-                    .main__text{
-
+                    .main__text {
+                        padding-bottom: 40px;
+                        margin: 0;
                     }
-                    .download-btn{
+                    .download-btn {
                         color: $font;
                         font-size: 20px;
                         background-color: $brand;
                         padding: 10px 20px;
                         font-weight: 500;
                         line-height: 29px;
+                        border: 1px solid transparent;
+                        &:hover{
+                        color: $brand;
+                        background-color: $white;
+                        border: 1px solid $brand;
+
+                        }
                     }
+                }
+                .photo{
+                    border-radius: 50%;
+                    width: 300px;
+                    box-shadow: -5px 10px $wall;
                 }
             }
         }

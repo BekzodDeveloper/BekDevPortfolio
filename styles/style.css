@@ -10,7 +10,7 @@ html *::after *::before {
 }
 
 html .container {
-  max-width: 1220px;
+  max-width: 1032px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -37,7 +37,7 @@ html body .header {
   z-index: 1;
 }
 
-html body .header__inner {
+html body .header__container .header__inner {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@ html body .header__inner {
           align-items: center;
 }
 
-html body .header__inner .menu__items {
+html body .header__container .header__inner .menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +58,11 @@ html body .header__inner .menu__items {
       justify-content: space-around;
 }
 
-html body .header__inner .menu__items .menu__item {
+html body .header__container .header__inner .menu__items .menu__item {
   list-style: none;
 }
 
-html body .header__inner .menu__items .menu__item-link {
+html body .header__container .header__inner .menu__items .menu__item-link {
   font-weight: 500;
   font-size: 20px;
   color: #ff7300;
@@ -73,7 +73,7 @@ html body .header__inner .menu__items .menu__item-link {
   transition: all 0.5s;
 }
 
-html body .header__inner .menu__items .menu__item-link:hover {
+html body .header__container .header__inner .menu__items .menu__item-link:hover {
   border: 2px solid transparent;
 }
 
@@ -91,6 +91,7 @@ html body .main__inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 100px;
 }
 
 html body .main__inner .main__content {
@@ -101,6 +102,17 @@ html body .main__inner .main__content .main__title {
   font-size: 44px;
   font-weight: 700;
   line-height: 60px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+html body .main__inner .main__content .main__title-orange {
+  color: #ff7300;
+}
+
+html body .main__inner .main__content .main__text {
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 html body .main__inner .main__content .download-btn {
@@ -110,5 +122,19 @@ html body .main__inner .main__content .download-btn {
   padding: 10px 20px;
   font-weight: 500;
   line-height: 29px;
+  border: 1px solid transparent;
+}
+
+html body .main__inner .main__content .download-btn:hover {
+  color: #ff7300;
+  background-color: #fdfdfd;
+  border: 1px solid #ff7300;
+}
+
+html body .main__inner .photo {
+  border-radius: 50%;
+  width: 300px;
+  -webkit-box-shadow: -5px 10px #0c0c22;
+          box-shadow: -5px 10px #0c0c22;
 }
 /*# sourceMappingURL=style.css.map */
