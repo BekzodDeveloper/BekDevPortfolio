@@ -46,6 +46,9 @@ html {
             z-index: 1;
 
             &__container {
+                max-width: 1220px;
+                padding: 0 10px;
+                margin: 0 auto;
                 .header__inner {
                     height: 100px;
                     display: flex;
@@ -239,14 +242,68 @@ html {
                         padding-left: 10px;
                         padding-right: 10px;
                         .fab {
-                            color: $white;   
-                            font-size: 30px;                    
+                            color: $white;
+                            font-size: 30px;
                         }
                     }
                 }
-                .copyright{
-                    .bekdev{
+                .copyright {
+                    .bekdev {
                         color: $brand;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .main {
+                &__inner {
+                    padding-top: 50px;
+                    flex-wrap: wrap;
+                    display: flex;
+                    justify-content: center;
+                    .main__content {
+                        max-width: 80%;
+                        text-align: center;
+                        margin: 0 auto 50px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 650px) {
+            .main {
+                &__inner {
+                    .main__content {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+        @media (max-width: 500px) {
+            .main {
+                &__inner {
+                    .main__content {
+                        max-width: 100%;
+                        .main__title{
+                            font-size: 38px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header {
+                .menu {
+                    display: none;
+                }
+            }
+            .main {
+                &__inner {
+                    .main__content {
+                        .main__title{
+                            font-size: 35px;
+                        }
                     }
                 }
             }

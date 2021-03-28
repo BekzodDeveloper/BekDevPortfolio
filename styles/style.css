@@ -46,6 +46,12 @@ html body .header {
   z-index: 1;
 }
 
+html body .header__container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 html body .header__container .header__inner {
   height: 100px;
   display: -webkit-box;
@@ -302,5 +308,48 @@ html body .contacts__inner .soc__links .soc__link .fab {
 
 html body .contacts__inner .copyright .bekdev {
   color: #ff7300;
+}
+
+@media (max-width: 1000px) {
+  html body .main__inner {
+    padding-top: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .main__inner .main__content {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  html body .main__inner .main__content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  html body .main__inner .main__content {
+    max-width: 100%;
+  }
+  html body .main__inner .main__content .main__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  html body .header .menu {
+    display: none;
+  }
+  html body .main__inner .main__content .main__title {
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
