@@ -259,6 +259,7 @@ html body .works__inner .works__items .work {
 
 html body .works__inner .works__items .work .work__image {
   border-radius: 20px;
+  width: 30%;
 }
 
 html body .works__inner .works__items .work .work__desc {
@@ -313,6 +314,7 @@ html body .contacts__inner .copyright .bekdev {
 @media (max-width: 1000px) {
   html body .main__inner {
     padding-top: 50px;
+    padding-bottom: 50px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -326,12 +328,73 @@ html body .contacts__inner .copyright .bekdev {
     max-width: 80%;
     text-align: center;
     margin: 0 auto 50px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body .main__inner .main__content .main__title {
+    font-size: 42px;
+  }
+  html body .main__inner .photo {
+    margin-bottom: 40px;
+  }
+  html body .works__inner .works__items {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .works__inner .works__items .work .work__image {
+    width: 60%;
+  }
+  html body .works__inner .works__items .work__desc .work__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 920px) {
+  html body .works__inner .works__items .work__desc .work__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .posts__inner .posts__heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .posts__inner .posts__view {
+    display: none;
+  }
+  html body .posts__inner .posts__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body .posts__inner .posts__items .post {
+    margin: 10px 0px;
+    margin-left: 0;
+  }
+  html body .posts__inner .posts__items .post + .post {
+    margin-left: 0px;
+  }
+  html body .works__inner .works__items .work {
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  html body .works__inner .works__items .work .work__image {
+    width: 100%;
   }
 }
 
 @media (max-width: 650px) {
   html body .main__inner .main__content {
     max-width: 90%;
+  }
+  html body .main__inner .main__content .main__title {
+    font-size: 36px;
   }
 }
 
@@ -340,7 +403,7 @@ html body .contacts__inner .copyright .bekdev {
     max-width: 100%;
   }
   html body .main__inner .main__content .main__title {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
@@ -349,7 +412,16 @@ html body .contacts__inner .copyright .bekdev {
     display: none;
   }
   html body .main__inner .main__content .main__title {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  html body .posts__inner .posts__items .post {
+    min-width: 200px;
+  }
+  html body .posts__inner .posts__items .post .post__date {
+    padding-right: 10px;
+  }
+  html body .posts__inner .posts__items .post .post__category {
+    padding-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

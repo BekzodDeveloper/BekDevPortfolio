@@ -204,6 +204,9 @@ html {
                         border-bottom: 1px solid $brand;
                         .work__image {
                             border-radius: 20px;
+                            width: 30%;
+
+                        
                         }
                         .work__desc {
                             margin-left: 20px;
@@ -259,6 +262,7 @@ html {
             .main {
                 &__inner {
                     padding-top: 50px;
+                    padding-bottom: 50px;
                     flex-wrap: wrap;
                     display: flex;
                     justify-content: center;
@@ -266,6 +270,89 @@ html {
                         max-width: 80%;
                         text-align: center;
                         margin: 0 auto 50px;
+                        order: 1;
+                        .main__title{
+                            font-size: 42px;
+                        }
+                    }
+                    .photo {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .works{
+                &__inner{
+                    .works__items{
+                        
+                        margin: 0 auto;
+                        justify-content: center;
+                        // width: 90%;
+                        .work{
+                            .work__image{
+                                width: 60%;
+                            }
+                            &__desc{
+                                .work__title{
+                                    font-size: 28px; ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 920px){
+            .works{
+                &__inner{
+                    .works__items{
+                        
+                        .work{
+                            .work__image{
+                                // width: 50%;
+                            }
+                            &__desc{
+                                .work__title{
+                                    font-size: 28px; ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .posts {
+                &__inner {
+                    .posts__heading {
+                        justify-content: center;
+                    }
+                    .posts__view {
+                        display: none;
+                    }
+                    .posts__items {
+                        flex-wrap: wrap;
+                        .post {
+                            margin: 10px 0px;
+                            margin-left: 0;
+                        }
+                        .post + .post {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+            .works{
+                &__inner{
+                    .works__items{
+                        
+                        .work{
+                            margin: 0 auto;
+                            flex-wrap: wrap;
+                            width: 80%;
+                            .work__image{
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -275,6 +362,9 @@ html {
                 &__inner {
                     .main__content {
                         max-width: 90%;
+                        .main__title{
+                            font-size: 36px;
+                        }
                     }
                 }
             }
@@ -284,8 +374,8 @@ html {
                 &__inner {
                     .main__content {
                         max-width: 100%;
-                        .main__title{
-                            font-size: 38px;
+                        .main__title {
+                            font-size: 32px;
                         }
                     }
                 }
@@ -301,8 +391,25 @@ html {
             .main {
                 &__inner {
                     .main__content {
-                        .main__title{
-                            font-size: 35px;
+                        .main__title {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .posts {
+                &__inner {
+                    .posts__items {
+
+                        .post {
+                        min-width: 200px;
+
+                            .post__date {
+                                padding-right: 10px;
+                            }
+                            .post__category{
+                                padding-left: 10px;
+                            }
                         }
                     }
                 }
