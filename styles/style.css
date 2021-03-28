@@ -33,12 +33,12 @@ html body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 23px;
-  color: #07071d;
+  color: #b3b3b3;
   margin: 0 auto;
 }
 
 html body .header {
-  background-color: #010103;
+  background-color: #000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ html body .header__container {
 }
 
 html body .header__container .header__inner {
-  height: 100px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +63,10 @@ html body .header__container .header__inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+html body .header__container .header__inner .menu .menu__btn {
+  display: none;
 }
 
 html body .header__container .header__inner .menu__items {
@@ -80,20 +84,16 @@ html body .header__container .header__inner .menu__items .menu__item {
 html body .header__container .header__inner .menu__items .menu__item-link {
   font-weight: 500;
   font-size: 20px;
-  color: #ff7300;
+  color: #ffffff;
   padding: 10px 15px;
   margin: 0 5px;
-  border: 2px solid #ff7300;
   line-height: 29px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-html body .header__container .header__inner .menu__items .menu__item-link:hover {
-  border: 2px solid transparent;
-}
-
 html body .main {
+  background-color: #000000;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -121,10 +121,11 @@ html body .main__inner .main__content .main__title {
   line-height: 60px;
   padding-bottom: 40px;
   margin: 0;
+  color: #b3b3b3;
 }
 
-html body .main__inner .main__content .main__title-orange {
-  color: #ff7300;
+html body .main__inner .main__content .main__title-white {
+  color: #ffffff !important;
 }
 
 html body .main__inner .main__content .main__text {
@@ -133,9 +134,9 @@ html body .main__inner .main__content .main__text {
 }
 
 html body .main__inner .main__content .download-btn {
-  color: #07071d;
+  color: #000000;
   font-size: 20px;
-  background-color: #ff7300;
+  background-color: #ffffff;
   padding: 10px 20px;
   font-weight: 500;
   line-height: 29px;
@@ -145,22 +146,29 @@ html body .main__inner .main__content .download-btn {
 }
 
 html body .main__inner .main__content .download-btn:hover {
-  color: #ff7300;
-  background-color: #fdfdfd;
-  border: 2px solid #ff7300;
+  color: #ffffff;
+  background-color: #b3b3b3;
 }
 
 html body .main__inner .photo {
   border-radius: 50%;
   width: 300px;
-  -webkit-box-shadow: -5px 10px #0c0c22;
-          box-shadow: -5px 10px #0c0c22;
 }
 
 html body .posts {
-  background-color: #ff7300;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../images/blog_bgi-mini.jpg);
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+html body .posts__inner {
+  opacity: 0.8;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 html body .posts__inner .posts__heading {
@@ -178,11 +186,11 @@ html body .posts__inner .posts__heading {
 html body .posts__inner .posts__heading .posts__title {
   font-weight: 400;
   line-height: 60px;
-  color: #fdfdfd;
+  color: #ffffff;
 }
 
 html body .posts__inner .posts__heading .posts__view {
-  color: #fdfdfd;
+  color: #ffffff;
 }
 
 html body .posts__inner .posts__items {
@@ -195,10 +203,11 @@ html body .posts__inner .posts__items {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #000000;
 }
 
 html body .posts__inner .posts__items .post {
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   padding: 25px 30px;
 }
 
@@ -218,7 +227,7 @@ html body .posts__inner .posts__items .post .post__date::after {
   content: "";
   width: 1px;
   height: 21px;
-  background-color: #07071d;
+  background-color: #b3b3b3;
   position: absolute;
   top: 0;
   right: 0px;
@@ -235,14 +244,14 @@ html body .posts__inner .posts__items .post + .post {
 html body .works {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #0c0c22;
-  color: #fdfdfd;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 html body .works__inner .works__title {
   font-weight: 400;
   line-height: 60px;
-  color: #fdfdfd;
+  color: #ffffff;
 }
 
 html body .works__inner .works__items .work {
@@ -253,13 +262,13 @@ html body .works__inner .works__items .work {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ff7300;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b3b3b3;
 }
 
 html body .works__inner .works__items .work .work__image {
   border-radius: 20px;
-  width: 30%;
+  width: 40%;
 }
 
 html body .works__inner .works__items .work .work__desc {
@@ -267,7 +276,7 @@ html body .works__inner .works__items .work .work__desc {
 }
 
 html body .works__inner .works__items .work .work__desc .work__title {
-  color: #ff7300;
+  color: #ffffff;
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
@@ -275,26 +284,25 @@ html body .works__inner .works__items .work .work__desc .work__title {
 }
 
 html body .works__inner .works__items .work .work__desc .work__date {
-  background-color: #fdfdfd;
-  color: #07071d;
+  color: #ffffff;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 50%;
+  padding: 3px 1px;
+  border-bottom: 1px solid #b3b3b3;
 }
 
 html body .works__inner .works__items .work .work__desc .work__tech {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 html body .contacts {
-  background-color: #010103;
+  background-color: #000000;
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
 html body .contacts__inner {
   text-align: center;
-  color: #fdfdfd;
+  color: #b3b3b3;
 }
 
 html body .contacts__inner .soc__links .soc__link {
@@ -303,12 +311,12 @@ html body .contacts__inner .soc__links .soc__link {
 }
 
 html body .contacts__inner .soc__links .soc__link .fab {
-  color: #fdfdfd;
+  color: #ffffff;
   font-size: 30px;
 }
 
 html body .contacts__inner .copyright .bekdev {
-  color: #ff7300;
+  color: #ffffff;
 }
 
 @media (max-width: 1000px) {
@@ -345,7 +353,7 @@ html body .contacts__inner .copyright .bekdev {
             justify-content: center;
   }
   html body .works__inner .works__items .work .work__image {
-    width: 60%;
+    width: 50%;
   }
   html body .works__inner .works__items .work__desc .work__title {
     font-size: 28px;
@@ -353,6 +361,48 @@ html body .contacts__inner .copyright .bekdev {
 }
 
 @media (max-width: 920px) {
+  html body .header .menu__items {
+    display: none !important;
+  }
+  html body .header .menu .menu__btn {
+    display: block !important;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    position: relative;
+  }
+  html body .header .menu .menu__btn::before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    left: 0px;
+    top: 9px;
+  }
+  html body .works__inner .works__title {
+    text-align: center;
+  }
+  html body .works__inner .works__items .work {
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .works__inner .works__items .work .work__image {
+    width: 100%;
+  }
+  html body .works__inner .works__items .work__desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px !important;
+  }
   html body .works__inner .works__items .work__desc .work__title {
     font-size: 28px;
   }
@@ -378,11 +428,14 @@ html body .contacts__inner .copyright .bekdev {
   html body .posts__inner .posts__items .post + .post {
     margin-left: 0px;
   }
+  html body .works__inner .works__title {
+    text-align: center;
+  }
   html body .works__inner .works__items .work {
     margin: 0 auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
   }
   html body .works__inner .works__items .work .work__image {
     width: 100%;
@@ -399,18 +452,24 @@ html body .contacts__inner .copyright .bekdev {
 }
 
 @media (max-width: 500px) {
+  html body .header .menu {
+    display: none;
+  }
   html body .main__inner .main__content {
     max-width: 100%;
   }
   html body .main__inner .main__content .main__title {
     font-size: 32px;
   }
+  html body .works .work {
+    width: 100% !important;
+  }
+  html body .works .work .work__title {
+    font-size: 26px !important;
+  }
 }
 
 @media (max-width: 400px) {
-  html body .header .menu {
-    display: none;
-  }
   html body .main__inner .main__content .main__title {
     font-size: 30px;
   }
@@ -422,6 +481,12 @@ html body .contacts__inner .copyright .bekdev {
   }
   html body .posts__inner .posts__items .post .post__category {
     padding-left: 10px;
+  }
+  html body .works__inner .works__items .work__desc .work__title {
+    font-size: 22px !important;
+  }
+  html body .contacts .copyright {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
