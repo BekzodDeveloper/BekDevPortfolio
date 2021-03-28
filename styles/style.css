@@ -69,6 +69,7 @@ html body .header__container .header__inner .menu__items .menu__item-link {
   padding: 10px 15px;
   margin: 0 5px;
   border: 2px solid #ff7300;
+  line-height: 29px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -79,6 +80,7 @@ html body .header__container .header__inner .menu__items .menu__item-link:hover 
 
 html body .main {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 html body .main__inner {
@@ -122,13 +124,15 @@ html body .main__inner .main__content .download-btn {
   padding: 10px 20px;
   font-weight: 500;
   line-height: 29px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 html body .main__inner .main__content .download-btn:hover {
   color: #ff7300;
   background-color: #fdfdfd;
-  border: 1px solid #ff7300;
+  border: 2px solid #ff7300;
 }
 
 html body .main__inner .photo {
@@ -136,5 +140,72 @@ html body .main__inner .photo {
   width: 300px;
   -webkit-box-shadow: -5px 10px #0c0c22;
           box-shadow: -5px 10px #0c0c22;
+}
+
+html body .posts {
+  background-color: #ff7300;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+html body .posts__inner .posts__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .posts__inner .posts__heading .posts__title {
+  font-weight: 400;
+  line-height: 60px;
+}
+
+html body .posts__inner .posts__heading .posts__view {
+  color: #fdfdfd;
+}
+
+html body .posts__inner .posts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .posts__inner .posts__items .post {
+  background-color: #fdfdfd;
+  padding: 25px 30px;
+}
+
+html body .posts__inner .posts__items .post .post__date {
+  padding-right: 30px;
+  position: relative;
+}
+
+html body .posts__inner .posts__items .post .post__date::after {
+  content: "";
+  width: 1px;
+  height: 21px;
+  background-color: #07071d;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+html body .posts__inner .posts__items .post .post__category {
+  padding-left: 25px;
+}
+
+html body .posts__inner .posts__items .post + .post {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

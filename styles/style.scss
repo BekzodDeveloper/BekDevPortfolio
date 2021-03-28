@@ -57,6 +57,7 @@ html {
                                     padding: 10px 15px;
                                     margin: 0 5px;
                                     border: 2px solid $brand;
+                                    line-height: 29px;
 
                                     transition: all 0.5s;
                                     &:hover {
@@ -71,6 +72,7 @@ html {
         }
         .main {
             padding-top: 100px;
+            padding-bottom: 100px;
             &__inner {
                 display: flex;
                 justify-content: space-between;
@@ -84,7 +86,7 @@ html {
                         line-height: 60px;
                         padding-bottom: 40px;
                         margin: 0;
-                        &-orange{
+                        &-orange {
                             color: #ff7300;
                         }
                     }
@@ -99,19 +101,66 @@ html {
                         padding: 10px 20px;
                         font-weight: 500;
                         line-height: 29px;
-                        border: 1px solid transparent;
-                        &:hover{
-                        color: $brand;
-                        background-color: $white;
-                        border: 1px solid $brand;
-
+                        border: 2px solid transparent;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: $brand;
+                            background-color: $white;
+                            border: 2px solid $brand;
                         }
                     }
                 }
-                .photo{
+                .photo {
                     border-radius: 50%;
                     width: 300px;
                     box-shadow: -5px 10px $wall;
+                }
+            }
+        }
+        .posts {
+            background-color: $brand;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            &__inner {
+                .posts__heading {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .posts__title {
+                        font-weight: 400;
+                        line-height: 60px;
+                    }
+                    .posts__view {
+                        color: $white;
+                    }
+                }
+                .posts__items {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .post {
+                        background-color: $white;
+                        padding: 25px 30px;
+                        .post__date {
+                            padding-right: 30px;
+                            position: relative;
+                        }
+                        .post__date::after {
+                            content: "";
+                            width: 1px;
+                            height: 21px;
+                            background-color: $font;
+                            position: absolute;
+                            top: 0;
+                            right: 0px;
+                        }
+                        .post__category{
+                            padding-left: 25px;
+                        }
+                    }
+                    .post + .post {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
