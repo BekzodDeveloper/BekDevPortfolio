@@ -19,6 +19,15 @@ html a {
   text-decoration: none;
 }
 
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  margin: 0;
+}
+
 html body {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
@@ -163,6 +172,7 @@ html body .posts__inner .posts__heading {
 html body .posts__inner .posts__heading .posts__title {
   font-weight: 400;
   line-height: 60px;
+  color: #fdfdfd;
 }
 
 html body .posts__inner .posts__heading .posts__view {
@@ -186,6 +196,13 @@ html body .posts__inner .posts__items .post {
   padding: 25px 30px;
 }
 
+html body .posts__inner .posts__items .post .post__title {
+  font-weight: 700;
+  line-height: 38px;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
 html body .posts__inner .posts__items .post .post__date {
   padding-right: 30px;
   position: relative;
@@ -207,5 +224,58 @@ html body .posts__inner .posts__items .post .post__category {
 
 html body .posts__inner .posts__items .post + .post {
   margin-left: 20px;
+}
+
+html body .works {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #0c0c22;
+  color: #fdfdfd;
+}
+
+html body .works__inner .works__title {
+  font-weight: 400;
+  line-height: 60px;
+  color: #fdfdfd;
+}
+
+html body .works__inner .works__items .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ff7300;
+}
+
+html body .works__inner .works__items .work .work__image {
+  border-radius: 20px;
+}
+
+html body .works__inner .works__items .work .work__desc {
+  margin-left: 20px;
+}
+
+html body .works__inner .works__items .work .work__desc .work__title {
+  color: #ff7300;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  padding-bottom: 20px;
+}
+
+html body .works__inner .works__items .work .work__desc .work__date {
+  background-color: #fdfdfd;
+  color: #07071d;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+
+html body .works__inner .works__items .work .work__desc .work__tech {
+  margin-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */
