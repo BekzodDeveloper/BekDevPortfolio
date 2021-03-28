@@ -3,6 +3,7 @@ $wall: #0c0c22;
 $brand: #ff7300;
 $font: #07071d;
 $white: #fdfdfd;
+$black: #010103;
 
 html {
     box-sizing: border-box;
@@ -37,7 +38,7 @@ html {
         margin: 0 auto;
 
         .header {
-            background-color: $wall;
+            background-color: $black;
             position: fixed;
             top: 0;
             left: 0;
@@ -198,7 +199,7 @@ html {
                         padding-bottom: 15px;
                         // background-color: $font;
                         border-bottom: 1px solid $brand;
-                        .work__image{
+                        .work__image {
                             border-radius: 20px;
                         }
                         .work__desc {
@@ -211,17 +212,41 @@ html {
                                 line-height: 44px;
                                 padding-bottom: 20px;
                             }
-                            .work__date{
+                            .work__date {
                                 background-color: $white;
                                 color: $font;
                                 font-weight: 700;
                                 padding: 3px 8px;
                                 border-radius: 50%;
                             }
-                            .work__tech{
+                            .work__tech {
                                 margin-left: 30px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .contacts {
+            background-color: $black;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            &__inner {
+                text-align: center;
+                color: $white;
+                .soc__links {
+                    .soc__link {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        .fab {
+                            color: $white;   
+                            font-size: 30px;                    
+                        }
+                    }
+                }
+                .copyright{
+                    .bekdev{
+                        color: $brand;
                     }
                 }
             }

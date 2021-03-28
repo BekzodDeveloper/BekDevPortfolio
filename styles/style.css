@@ -38,7 +38,7 @@ html body {
 }
 
 html body .header {
-  background-color: #0c0c22;
+  background-color: #010103;
   position: fixed;
   top: 0;
   left: 0;
@@ -277,5 +277,30 @@ html body .works__inner .works__items .work .work__desc .work__date {
 
 html body .works__inner .works__items .work .work__desc .work__tech {
   margin-left: 30px;
+}
+
+html body .contacts {
+  background-color: #010103;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+html body .contacts__inner {
+  text-align: center;
+  color: #fdfdfd;
+}
+
+html body .contacts__inner .soc__links .soc__link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+html body .contacts__inner .soc__links .soc__link .fab {
+  color: #fdfdfd;
+  font-size: 30px;
+}
+
+html body .contacts__inner .copyright .bekdev {
+  color: #ff7300;
 }
 /*# sourceMappingURL=style.css.map */
