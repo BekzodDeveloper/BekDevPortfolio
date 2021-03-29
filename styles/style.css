@@ -160,7 +160,11 @@ html body .posts {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-image: url(../images/blog_bgi-mini.jpg);
+  background-image: url(../images/blog_bgi-2.jpg);
+}
+
+html body .posts .bgcolor {
+  background-color: rgba(0, 0, 0, 0.589);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -268,7 +272,7 @@ html body .works__inner .works__items .work {
 
 html body .works__inner .works__items .work .work__image {
   border-radius: 20px;
-  width: 40%;
+  width: 100%;
 }
 
 html body .works__inner .works__items .work .work__desc {

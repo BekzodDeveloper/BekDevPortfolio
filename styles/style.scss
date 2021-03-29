@@ -75,9 +75,6 @@ html {
                                     line-height: 29px;
 
                                     transition: all 0.5s;
-                                    &:hover {
-                                        // border: 1px solid transparent;
-                                    }
                                 }
                             }
                         }
@@ -102,11 +99,10 @@ html {
                         line-height: 60px;
                         padding-bottom: 40px;
                         margin: 0;
-                        color: $font
-                        
+                        color: $font;
                     }
-                    .main__title-white{
-                        color: $white!important;
+                    .main__title-white {
+                        color: $white !important;
                     }
                     .main__text {
                         padding-bottom: 40px;
@@ -141,10 +137,13 @@ html {
             background-attachment: fixed;
             background-position: center;
 
-            background-image: url(../images/blog_bgi-mini.jpg);
+            background-image: url(../images/blog_bgi-2.jpg);
 
-            padding-top: 30px;
-            padding-bottom: 30px;
+            .bgcolor {
+                background-color: hsla(0, 0%, 0%, 0.589);
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
             &__inner {
                 opacity: 0.8;
                 object-fit: cover;
@@ -171,6 +170,7 @@ html {
                     .post {
                         background-color: $white;
                         padding: 25px 30px;
+
                         .post__title {
                             font-weight: 700;
                             line-height: 38px;
@@ -221,7 +221,7 @@ html {
                         border-bottom: 1px solid $font;
                         .work__image {
                             border-radius: 20px;
-                            width: 40%;
+                            width: 100%;
                         }
                         .work__desc {
                             margin-left: 20px;
