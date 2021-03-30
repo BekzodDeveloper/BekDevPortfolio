@@ -84,14 +84,16 @@ html {
         }
         .main {
             background-color: $wall;
-            padding-top: 100px;
-            padding-bottom: 100px;
+            // padding-top: 100px;
+            // padding-bottom: 100px;
             height: 100vh;
+            display: flex;
+            align-items: center;
             &__inner {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-top: 100px;
+                // padding-top: 50px;
                 .main__content {
                     max-width: 50%;
                     .main__title {
@@ -220,6 +222,7 @@ html {
                         padding-bottom: 30px;
                         // background-color: $font;
                         border-bottom: 1px solid $font;
+                        
                         .work__image {
                             border-radius: 20px;
                             width: 100%;
