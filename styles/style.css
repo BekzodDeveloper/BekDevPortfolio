@@ -96,6 +96,7 @@ html body .main {
   background-color: #000000;
   padding-top: 100px;
   padding-bottom: 100px;
+  height: 100vh;
 }
 
 html body .main__inner {
@@ -357,7 +358,7 @@ html body .contacts__inner .copyright .bekdev {
             justify-content: center;
   }
   html body .works__inner .works__items .work .work__image {
-    width: 50%;
+    width: 80%;
   }
   html body .works__inner .works__items .work__desc .work__title {
     font-size: 28px;
