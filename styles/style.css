@@ -44,6 +44,7 @@ html body .header {
   left: 0;
   right: 0;
   z-index: 1;
+  height: 60px;
 }
 
 html body .header__container {
@@ -53,7 +54,6 @@ html body .header__container {
 }
 
 html body .header__container .header__inner {
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

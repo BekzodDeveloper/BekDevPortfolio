@@ -44,13 +44,14 @@ html {
             left: 0;
             right: 0;
             z-index: 1;
+            height: 60px;
+
 
             &__container {
                 max-width: 1220px;
                 padding: 0 10px;
                 margin: 0 auto;
                 .header__inner {
-                    height: 60px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
