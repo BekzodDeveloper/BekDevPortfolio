@@ -329,18 +329,13 @@ html body .contacts__inner .copyright .bekdev {
 
 @media (max-width: 1000px) {
   html body .main__inner {
-    padding-top: 50px;
-    padding-bottom: 50px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  html body .main__inner .main__content {
+  html body .main .main__content {
     max-width: 80%;
     text-align: center;
     margin: 0 auto 50px;
@@ -348,10 +343,11 @@ html body .contacts__inner .copyright .bekdev {
         -ms-flex-order: 1;
             order: 1;
   }
-  html body .main__inner .main__content .main__title {
+  html body .main .main__content .main__title {
     font-size: 42px;
   }
-  html body .main__inner .photo {
+  html body .main .photo {
+    width: 50%;
     margin-bottom: 40px;
   }
   html body .works__inner .works__items {
@@ -360,10 +356,10 @@ html body .contacts__inner .copyright .bekdev {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  html body .works__inner .works__items .work .work__image {
+  html body .works .work .work__image {
     width: 80%;
   }
-  html body .works__inner .works__items .work__desc .work__title {
+  html body .works .work__desc .work__title {
     font-size: 28px;
   }
 }

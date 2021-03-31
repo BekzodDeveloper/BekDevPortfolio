@@ -46,7 +46,6 @@ html {
             z-index: 1;
             height: 60px;
 
-
             &__container {
                 max-width: 1220px;
                 padding: 0 10px;
@@ -223,7 +222,7 @@ html {
                         padding-bottom: 30px;
                         // background-color: $font;
                         border-bottom: 1px solid $font;
-                        
+
                         .work__image {
                             border-radius: 20px;
                             width: 100%;
@@ -281,24 +280,27 @@ html {
 
         @media (max-width: 1000px) {
             .main {
+                // height: 150vh;
                 &__inner {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
+                    // padding-top: 50px;
+                    // padding-bottom: 50px;
                     flex-wrap: wrap;
-                    display: flex;
+                    // display: flex;
                     justify-content: center;
-                    .main__content {
-                        max-width: 80%;
-                        text-align: center;
-                        margin: 0 auto 50px;
-                        order: 1;
-                        .main__title {
-                            font-size: 42px;
-                        }
+                    // align-items: center;
+                }
+                .main__content {
+                    max-width: 80%;
+                    text-align: center;
+                    margin: 0 auto 50px;
+                    order: 1;
+                    .main__title {
+                        font-size: 42px;
                     }
-                    .photo {
-                        margin-bottom: 40px;
-                    }
+                }
+                .photo {
+                    width: 50%;
+                    margin-bottom: 40px;
                 }
             }
             .works {
@@ -307,15 +309,15 @@ html {
                         margin: 0 auto;
                         justify-content: center;
                         // width: 90%;
-                        .work {
-                            .work__image {
-                                width: 80%;
-                            }
-                            &__desc {
-                                .work__title {
-                                    font-size: 28px;
-                                }
-                            }
+                    }
+                }
+                .work {
+                    .work__image {
+                        width: 80%;
+                    }
+                    &__desc {
+                        .work__title {
+                            font-size: 28px;
                         }
                     }
                 }
