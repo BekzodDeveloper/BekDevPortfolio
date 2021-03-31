@@ -46,7 +46,6 @@ html {
             z-index: 1;
             height: 60px;
 
-
             &__container {
                 max-width: 1220px;
                 padding: 0 10px;
@@ -223,7 +222,7 @@ html {
                         padding-bottom: 30px;
                         // background-color: $font;
                         border-bottom: 1px solid $font;
-                        
+
                         .work__image {
                             border-radius: 20px;
                             width: 100%;
@@ -282,8 +281,8 @@ html {
         @media (max-width: 1000px) {
             .main {
                 &__inner {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
+                    // padding-top: 50px;
+                    // padding-bottom: 50px;
                     flex-wrap: wrap;
                     display: flex;
                     justify-content: center;
@@ -295,9 +294,6 @@ html {
                         .main__title {
                             font-size: 42px;
                         }
-                    }
-                    .photo {
-                        margin-bottom: 40px;
                     }
                 }
             }
@@ -322,33 +318,6 @@ html {
             }
         }
         @media (max-width: 920px) {
-            .header {
-                .menu {
-                    &__items {
-                        display: none !important;
-                    }
-                    .menu__btn {
-                        display: block !important;
-                        border: none;
-                        background-color: transparent;
-                        width: 40px;
-                        height: 30px;
-                        border-top: 4px solid $white;
-                        border-bottom: 4px solid $white;
-                        position: relative;
-
-                        &::before {
-                            content: "";
-                            background-color: $white;
-                            position: absolute;
-                            width: 40px;
-                            height: 4px;
-                            left: 0px;
-                            top: 9px;
-                        }
-                    }
-                }
-            }
             .works {
                 &__inner {
                     .works__title {
@@ -432,7 +401,29 @@ html {
         @media (max-width: 500px) {
             .header {
                 .menu {
-                    display: none;
+                    &__items {
+                        display: none;
+                    }
+                }
+                .menu__btn {
+                    display: block !important;
+                    border: none;
+                    background-color: transparent;
+                    width: 40px;
+                    height: 30px;
+                    border-top: 4px solid $white;
+                    border-bottom: 4px solid $white;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        background-color: $white;
+                        position: absolute;
+                        width: 40px;
+                        height: 4px;
+                        left: 0px;
+                        top: 9px;
+                    }
                 }
             }
             .main {
