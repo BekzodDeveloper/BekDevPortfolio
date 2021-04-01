@@ -192,6 +192,7 @@ html {
                         background-color: $white;
                         padding: 25px 30px;
                         min-height: 300px;
+                        border-radius: 30px;
 
                         .post__title {
                             font-weight: 700;
@@ -322,9 +323,17 @@ html {
                     }
                 }
                 .photo {
-                    margin-top: 40px;
+                    margin-top: 90px;
                     margin-bottom: 20px;
                     width: 250px;
+                }
+            }
+            .posts {
+                .post__date {
+                    padding-right: 10px !important;
+                }
+                .post__category {
+                    padding-left: 10px !important;
                 }
             }
             .works {
@@ -350,6 +359,14 @@ html {
         @media (max-width: 920px) {
             .header {
                 .menu {
+                }
+            }
+            .posts {
+                .post__date {
+                    padding-right: 5px !important;
+                }
+                .post__category {
+                    padding-left: 5px !important;
                 }
             }
             .works {
@@ -401,6 +418,17 @@ html {
                 }
                 .post {
                     min-height: 200px !important;
+                    .post__date {
+                        flex-wrap: wrap !important;
+                        
+                        // padding-right: 2px!important;
+                    }
+                    .post__category {
+                        flex-wrap: wrap !important;
+                        
+
+                        // padding-left: 2px!important;
+                    }
                 }
             }
             .works {
@@ -436,8 +464,8 @@ html {
         @media (max-width: 500px) {
             .header {
                 // right: 0!important;
-                
-                .header__container{
+
+                .header__container {
                     // margin: 0;
                 }
                 display: flex !important;
@@ -446,7 +474,6 @@ html {
                 .menu {
                     display: flex !important;
                     justify-content: space-evenly !important;
-
                 }
                 .menu__items {
                     display: none;

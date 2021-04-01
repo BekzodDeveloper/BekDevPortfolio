@@ -244,6 +244,7 @@ html body .posts__inner .posts__items .post {
   background-color: #ffffff;
   padding: 25px 30px;
   min-height: 300px;
+  border-radius: 30px;
 }
 
 html body .posts__inner .posts__items .post .post__title {
@@ -378,9 +379,15 @@ html body .contacts__inner .copyright .bekdev {
     padding-bottom: 30px;
   }
   html body .main .photo {
-    margin-top: 40px;
+    margin-top: 90px;
     margin-bottom: 20px;
     width: 250px;
+  }
+  html body .posts .post__date {
+    padding-right: 10px !important;
+  }
+  html body .posts .post__category {
+    padding-left: 10px !important;
   }
   html body .works__inner .works__items {
     margin: 0 auto;
@@ -397,6 +404,12 @@ html body .contacts__inner .copyright .bekdev {
 }
 
 @media (max-width: 920px) {
+  html body .posts .post__date {
+    padding-right: 5px !important;
+  }
+  html body .posts .post__category {
+    padding-left: 5px !important;
+  }
   html body .works__inner .works__title {
     text-align: center;
   }
@@ -444,6 +457,14 @@ html body .contacts__inner .copyright .bekdev {
   }
   html body .posts .post {
     min-height: 200px !important;
+  }
+  html body .posts .post .post__date {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  html body .posts .post .post__category {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
   html body .works__inner .works__title {
     text-align: center;
