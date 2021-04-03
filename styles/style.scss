@@ -59,7 +59,7 @@ html {
             }
         }
         .menu {
-            #ckeck {
+            #check {
                 display: none;
             }
             display: flex;
@@ -479,18 +479,38 @@ html {
                     position: fixed;
                     display: block;
                     top: 0px;
-                    right: 0px;
-                    background-color: $white;
-                    width: 50%;
-                    height: 25vh;
+                    right: -100px;
+                    background-color: rgb(245, 244, 244);
+                    width: 70px;
+                    height: 200px;
                     margin: 0;
-                    padding-top: 40px;
+                    padding-top: 60px;
                     padding-left: 10px;
                     box-sizing: border-box;
-                    border-radius: 50% 0 0 50%;
-                    text-align: right;
+                    border-radius: 20px 0 0 20px;
+                    text-align: center;
                     border: 1px solid white;
+                    z-index: 100;
+                    transition: 0.6s;
 
+                }
+                #menu__btn-close{
+                    display: none;
+                    transition: 0.1s;
+
+                }
+                
+                #check:checked ~ .menu__items {
+                    right: 0px;
+                }
+                #check:checked ~ #menu__btn #menu__btn-close  {
+                    display: block;
+                    z-index: 101;
+                    color: $wall;
+                    font-size: 40px;
+                }
+                #check:checked ~ #menu__btn #menu__btn-open  {
+                    display: none;
                 }
                 #menu__btn {
                     display: inline-block;
@@ -498,6 +518,12 @@ html {
                 .menu__item-link {
                     color: $wall;
                     line-height: 10px;
+                    .fas{
+                        width: 20px;
+                    }
+                    span{
+                        display: none;
+                    }
                     
 
                 }

@@ -74,7 +74,7 @@ html body .menu {
           align-items: center;
 }
 
-html body .menu #ckeck {
+html body .menu #check {
   display: none;
 }
 
@@ -528,18 +528,38 @@ html body .contacts__inner .copyright .bekdev {
     position: fixed;
     display: block;
     top: 0px;
-    right: 0px;
-    background-color: #ffffff;
-    width: 50%;
-    height: 25vh;
+    right: -100px;
+    background-color: #f5f4f4;
+    width: 70px;
+    height: 200px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-left: 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 50% 0 0 50%;
-    text-align: right;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
     border: 1px solid white;
+    z-index: 100;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  html body .header #menu__btn-close {
+    display: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  html body .header #check:checked ~ .menu__items {
+    right: 0px;
+  }
+  html body .header #check:checked ~ #menu__btn #menu__btn-close {
+    display: block;
+    z-index: 101;
+    color: #000000;
+    font-size: 40px;
+  }
+  html body .header #check:checked ~ #menu__btn #menu__btn-open {
+    display: none;
   }
   html body .header #menu__btn {
     display: inline-block;
@@ -547,6 +567,12 @@ html body .contacts__inner .copyright .bekdev {
   html body .header .menu__item-link {
     color: #000000;
     line-height: 10px;
+  }
+  html body .header .menu__item-link .fas {
+    width: 20px;
+  }
+  html body .header .menu__item-link span {
+    display: none;
   }
   html body .main__inner .main__content {
     max-width: 100%;
