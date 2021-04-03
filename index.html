@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -20,9 +20,15 @@
             <div class="header__inner">
                 <img class="logo" src="" alt="">
                 <nav class="menu">
-                    <button class="menu__btn"></button>
+                    <input type="checkbox" name="" id="ckeck">
+                    <label id="menu__btn" for="check">
+                        <i id="menu__btn-open" class='bx bx-menu-alt-right'></i>
+                        <i id="menu__btn-close" class='bx bxs-x-circle'></i>
+                    </label>
+
+                    <!-- <button class="menu__btn"></button> -->
                     <ul class="menu__items">
-                        <li class="menu__item"><a class="menu__item-link" href="#works">Мои проекты</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#works">Портфолио</a></li>
                         <li class="menu__item"><a class="menu__item-link" href="#posts">Блог</a></li>
                         <li class="menu__item"><a class="menu__item-link" href="#contacts">Контакты</a></li>
                     </ul>
@@ -57,7 +63,7 @@
                         -->
                     </p>
                     <a class="download-btn"
-                        href="https://drive.google.com/file/d/17Fme0gJ5wW_0TrRg9NQvX2HWnYGdxiLF/view?usp=sharing">
+                        href="https://drive.google.com/file/d/1EAU2VAh5vanusT3Li9jIf8C4SgZGnl05/view?usp=sharing">
                         <!-- Download Resume -->
                         Скачать Резюме
                     </a>
@@ -125,7 +131,7 @@
             <div class="works__inner">
                 <h2 class="works__title">
                     <!-- Featured works -->
-                    Мои прoекты
+                    Портфолио
                 </h2>
                 <div class="works__items">
                     <div class="work">

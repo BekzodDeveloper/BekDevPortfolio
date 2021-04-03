@@ -45,41 +45,70 @@ html {
             right: 0;
             z-index: 1;
             height: 60px;
+            position: relative;
 
             &__container {
                 max-width: 1220px;
                 padding: 0 10px;
-                margin: 0 auto;
+                // margin: 0 auto;
                 .header__inner {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-
-                    .menu {
-                        .menu__btn {
-                            display: none;
-                        }
-                        &__items {
-                            display: flex;
-                            justify-content: space-around;
-                            .menu__item {
-                                list-style: none;
-
-                                &-link {
-                                    font-weight: 500;
-                                    font-size: 20px;
-                                    color: $white;
-                                    padding: 10px 15px;
-                                    margin: 0 5px;
-                                    // border: 1px solid $white;
-                                    line-height: 29px;
-
-                                    transition: all 0.5s;
-                                }
-                            }
-                        }
-                    }
                 }
+            }
+        }
+        .menu {
+            #ckeck {
+                display: none;
+            }
+            display: flex;
+            align-items: center;
+            #menu__btn {
+                display: none;
+                #menu__btn-open,
+                #menu__btn-close {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    font-size: 40px;
+                    transform: translate(0, -50%);
+                    cursor: pointer;
+                    color: $white;
+                }
+            }
+        }
+        .menu__items {
+            display: flex;
+            justify-content: space-around;
+            .menu__item {
+                list-style: none;
+                padding: 10px 15px;
+            }
+        }
+        .menu__item-link {
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            color: $white;
+            line-height: 29px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+                bottom: -5px;
+                transform: scale(0);
+                transition: 0.6s transform;
+                transform-origin: right;
+            }
+
+            &:hover::before {
+                transform: scale(1);
+                transform-origin: left;
             }
         }
         .main {
@@ -173,6 +202,8 @@ html {
                     .post {
                         background-color: $white;
                         padding: 25px 30px;
+                        min-height: 300px;
+                        border-radius: 30px;
 
                         .post__title {
                             font-weight: 700;
@@ -280,21 +311,41 @@ html {
 
         @media (max-width: 1000px) {
             .main {
+                // height: 150vh;
                 &__inner {
                     // padding-top: 50px;
                     // padding-bottom: 50px;
                     flex-wrap: wrap;
-                    display: flex;
+                    // display: flex;
                     justify-content: center;
-                    .main__content {
-                        max-width: 80%;
-                        text-align: center;
-                        margin: 0 auto 50px;
-                        order: 1;
-                        .main__title {
-                            font-size: 42px;
-                        }
+                    // align-items: center;
+                }
+                .main__content {
+                    max-width: 80%;
+                    text-align: center;
+                    margin: 0 auto 50px;
+                    order: 1;
+                    .main__title {
+                        font-size: 42px;
+                        padding-bottom: 20px;
                     }
+
+                    .main__text {
+                        padding-bottom: 30px;
+                    }
+                }
+                .photo {
+                    margin-top: 90px;
+                    margin-bottom: 20px;
+                    width: 250px;
+                }
+            }
+            .posts {
+                .post__date {
+                    padding-right: 10px !important;
+                }
+                .post__category {
+                    padding-left: 10px !important;
                 }
             }
             .works {
@@ -303,21 +354,29 @@ html {
                         margin: 0 auto;
                         justify-content: center;
                         // width: 90%;
-                        .work {
-                            .work__image {
-                                width: 80%;
-                            }
-                            &__desc {
-                                .work__title {
-                                    font-size: 28px;
-                                }
-                            }
+                    }
+                }
+                .work {
+                    .work__image {
+                        width: 80%;
+                    }
+                    &__desc {
+                        .work__title {
+                            font-size: 28px;
                         }
                     }
                 }
             }
         }
         @media (max-width: 920px) {
+            .posts {
+                .post__date {
+                    padding-right: 5px !important;
+                }
+                .post__category {
+                    padding-left: 5px !important;
+                }
+            }
             .works {
                 &__inner {
                     .works__title {
@@ -349,22 +408,33 @@ html {
         }
         @media (max-width: 768px) {
             .posts {
-                &__inner {
-                    .posts__heading {
-                        justify-content: center;
+                .posts__heading {
+                    justify-content: center;
+                }
+                .posts__view {
+                    display: none;
+                }
+                .posts__items {
+                    flex-wrap: wrap;
+                    .post {
+                        margin: 10px 0px;
+                        margin-left: 0;
                     }
-                    .posts__view {
-                        display: none;
+                    .post + .post {
+                        margin-left: 0px;
                     }
-                    .posts__items {
-                        flex-wrap: wrap;
-                        .post {
-                            margin: 10px 0px;
-                            margin-left: 0;
-                        }
-                        .post + .post {
-                            margin-left: 0px;
-                        }
+                }
+                .post {
+                    min-height: 200px !important;
+                    .post__date {
+                        flex-wrap: wrap !important;
+
+                        // padding-right: 2px!important;
+                    }
+                    .post__category {
+                        flex-wrap: wrap !important;
+
+                        // padding-left: 2px!important;
                     }
                 }
             }
@@ -400,30 +470,16 @@ html {
         }
         @media (max-width: 500px) {
             .header {
-                .menu {
-                    &__items {
-                        display: none;
-                    }
-                }
-                .menu__btn {
-                    display: block !important;
-                    border: none;
-                    background-color: transparent;
-                    width: 40px;
-                    height: 30px;
-                    border-top: 4px solid $white;
-                    border-bottom: 4px solid $white;
-                    position: relative;
+                display: flex !important;
+                justify-content: end !important;
+                align-items: center;
 
-                    &::before {
-                        content: "";
-                        background-color: $white;
-                        position: absolute;
-                        width: 40px;
-                        height: 4px;
-                        left: 0px;
-                        top: 9px;
-                    }
+                .menu__items {
+                    display: none;
+                }
+                #menu__btn {
+                    display: inline-block;
+
                 }
             }
             .main {
@@ -432,6 +488,8 @@ html {
                         max-width: 100%;
                         .main__title {
                             font-size: 32px;
+                            padding-bottom: 10px;
+                            line-height: 45px;
                         }
                     }
                 }
@@ -448,41 +506,29 @@ html {
 
         @media (max-width: 400px) {
             .main {
-                &__inner {
-                    .main__content {
-                        .main__title {
-                            font-size: 30px;
-                        }
-                    }
+                .main__title {
+                    font-size: 30px;
+                }
+                .photo {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    width: 200px;
                 }
             }
             .posts {
-                &__inner {
-                    .posts__items {
-                        .post {
-                            min-width: 200px;
-
-                            .post__date {
-                                padding-right: 10px;
-                            }
-                            .post__category {
-                                padding-left: 10px;
-                            }
-                        }
+                .post {
+                    min-width: 200px;
+                    .post__date {
+                        padding-right: 10px;
+                    }
+                    .post__category {
+                        padding-left: 10px;
                     }
                 }
             }
             .works {
-                &__inner {
-                    .works__items {
-                        .work {
-                            &__desc {
-                                .work__title {
-                                    font-size: 22px !important;
-                                }
-                            }
-                        }
-                    }
+                .work__title {
+                    font-size: 22px !important;
                 }
             }
             .contacts {
