@@ -107,6 +107,10 @@ html body .menu__items .menu__item {
   padding: 10px 15px;
 }
 
+html body .menu__items .menu__item .fas {
+  display: none !important;
+}
+
 html body .menu__item-link {
   position: relative;
   font-weight: 500;
@@ -530,24 +534,37 @@ html body .contacts__inner .copyright .bekdev {
     top: 0px;
     right: -100px;
     background-color: #f5f4f4;
-    width: 70px;
+    width: 71px;
     height: 200px;
     margin: 0;
     padding-top: 60px;
-    padding-left: 10px;
+    padding-left: 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 20px 0 0 20px;
-    text-align: center;
+    text-align: left;
     border: 1px solid white;
     z-index: 100;
     -webkit-transition: 0.6s;
     transition: 0.6s;
+    padding-left: 20px;
+  }
+  html body .header .menu__items .fas {
+    display: inline-block !important;
+  }
+  html body .header .menu__item {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   html body .header #menu__btn-close {
     display: none;
     -webkit-transition: 0.1s;
     transition: 0.1s;
+  }
+  html body .header #menu__btn-open {
+    background-color: #0000004d;
+    border-radius: 50px;
+    padding: 1px;
   }
   html body .header #check:checked ~ .menu__items {
     right: 0px;
@@ -563,6 +580,8 @@ html body .contacts__inner .copyright .bekdev {
   }
   html body .header #menu__btn {
     display: inline-block;
+    position: fixed;
+    z-index: 102;
   }
   html body .header .menu__item-link {
     color: #000000;

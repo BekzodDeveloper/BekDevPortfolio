@@ -84,6 +84,9 @@ html {
             .menu__item {
                 list-style: none;
                 padding: 10px 15px;
+                .fas {
+                    display: none !important;
+                }
             }
         }
         .menu__item-link {
@@ -481,51 +484,63 @@ html {
                     top: 0px;
                     right: -100px;
                     background-color: rgb(245, 244, 244);
-                    width: 70px;
+                    width: 71px;
                     height: 200px;
                     margin: 0;
                     padding-top: 60px;
-                    padding-left: 10px;
+                    padding-left: 0px;
                     box-sizing: border-box;
                     border-radius: 20px 0 0 20px;
-                    text-align: center;
+                    text-align: left;
                     border: 1px solid white;
                     z-index: 100;
                     transition: 0.6s;
-
+                    padding-left: 20px;
+                    .fas {
+                        display: inline-block !important;
+                    }
                 }
-                #menu__btn-close{
+                .menu__item {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                #menu__btn-close {
                     display: none;
                     transition: 0.1s;
-
                 }
-                
+                #menu__btn-open {
+                    background-color: #0000004d;
+                    border-radius: 50px;
+                    padding: 1px;
+                }
+
                 #check:checked ~ .menu__items {
                     right: 0px;
                 }
-                #check:checked ~ #menu__btn #menu__btn-close  {
+                #check:checked ~ #menu__btn #menu__btn-close {
                     display: block;
                     z-index: 101;
                     color: $wall;
                     font-size: 40px;
                 }
-                #check:checked ~ #menu__btn #menu__btn-open  {
+                #check:checked ~ #menu__btn #menu__btn-open {
                     display: none;
                 }
                 #menu__btn {
                     display: inline-block;
+                    position: fixed;
+                    z-index: 102;
                 }
                 .menu__item-link {
                     color: $wall;
                     line-height: 10px;
-                    .fas{
+
+                    .fas {
                         width: 20px;
                     }
-                    span{
+                    span {
                         display: none;
                     }
-                    
-
                 }
             }
             .main {
