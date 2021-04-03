@@ -522,12 +522,31 @@ html body .contacts__inner .copyright .bekdev {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   html body .header .menu__items {
-    display: none;
+    position: fixed;
+    display: block;
+    top: 0px;
+    right: 0px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 25vh;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 50% 0 0 50%;
+    text-align: right;
+    border: 1px solid white;
   }
   html body .header #menu__btn {
     display: inline-block;
+  }
+  html body .header .menu__item-link {
+    color: #000000;
+    line-height: 10px;
   }
   html body .main__inner .main__content {
     max-width: 100%;

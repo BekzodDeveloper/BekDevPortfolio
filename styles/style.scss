@@ -473,12 +473,32 @@ html {
                 display: flex !important;
                 justify-content: end !important;
                 align-items: center;
+                position: relative;
 
                 .menu__items {
-                    display: none;
+                    position: fixed;
+                    display: block;
+                    top: 0px;
+                    right: 0px;
+                    background-color: $white;
+                    width: 50%;
+                    height: 25vh;
+                    margin: 0;
+                    padding-top: 40px;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    border-radius: 50% 0 0 50%;
+                    text-align: right;
+                    border: 1px solid white;
+
                 }
                 #menu__btn {
                     display: inline-block;
+                }
+                .menu__item-link {
+                    color: $wall;
+                    line-height: 10px;
+                    
 
                 }
             }
