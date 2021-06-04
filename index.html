@@ -2,217 +2,211 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEKZOD DEVELOPER</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEKZOD DEVELOPER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
-    <!---->
-    <header id="header" class="header">
-        <div class="header__container">
-            <div class="header__inner">
-                <img class="logo" src="" alt="">
-                <nav class="menu">
-                    <input type="checkbox" name="" id="check">
-                    <label id="menu__btn" for="check">
-                        <i id="menu__btn-open" class="fas fa-bars"></i>
-                        <i id="menu__btn-close" class="fas fa-times"></i>
-                    </label>
+  <!---->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img class="logo" src="" alt="">
+        <nav class="menu">
+          <input type="checkbox" name="" id="check">
+          <label id="menu__btn" for="check">
+            <i id="menu__btn-open" class="fas fa-bars"></i>
+            <i id="menu__btn-close" class="fas fa-times"></i>
+          </label>
 
-                    <ul class="menu__items">
-                        <li class="menu__item"><a class="menu__item-link" href="#works">
-                            <i class="fas fa-briefcase"></i>  <span>Портфолио</span>
-                        </a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#posts">
-                            <i class="fas fa-pencil-alt"></i>  <span>Блог</span>
-                        </a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#contacts">
-                            <i class="fas fa-id-card"></i>  <span>Контакты</span>
-                        </a></li>
-                    </ul>
-                </nav>
-            </div>
+          <ul class="menu__items">
+            <li class="menu__item"><a class="menu__item-link" href="#posts">
+                <i class="fas fa-pencil-alt"></i> <span>Посты</span>
+              </a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#works">
+                <i class="fas fa-briefcase"></i> <span>Портфолио</span>
+              </a></li>
+
+            <li class="menu__item"><a class="menu__item-link" href="#contacts">
+                <i class="fas fa-id-card"></i> <span>Контакты</span>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="main" class="main">
+    <div class="container">
+      <div class="main__inner">
+        <div class="main__content">
+          <h1 class="main__title">
+            Привет, Я <span class="main__title-white">Бекзод</span>,
+            <br>
+            Фронтэнд <span class="main__title-white">Разработчик</span>
+
+          </h1>
+          <p class="main__text">
+            Я в сфере программирования более чем год. Разработка - это сфера, которая
+            увеличивает продуктивность моих работ и развивает меня в моей жизни.
+
+          </p>
+          <a class="download-btn"
+            href="https://drive.google.com/file/d/1EAU2VAh5vanusT3Li9jIf8C4SgZGnl05/view?usp=sharing">
+
+            Скачать Резюме
+          </a>
         </div>
-    </header>
-    <section id="main" class="main">
-        <div class="container">
-            <div class="main__inner">
-                <div class="main__content">
-                    <h1 class="main__title">
-                        Привет, Я <span class="main__title-white">Бекзод</span>,
-                        <br>
-                        Фронтэнд <span class="main__title-white">Разработчик</span>
-                        <!--
-                        Hi, I am <span class="main__title-orange">Bekzod</span>,
-                        <br>
-                        Frontend <span class="main__title-orange">Developer</span>
-                        -->
-                    </h1>
-                    <p class="main__text">
-                        Я в сфере программирования более чем год. Разработка - это сфера, которая
-                        увеличивает продуктивность моих работ и развивает меня в моей жизни.
-                        <!--
-                            Разработка внешнего интерфейса и творчество - одно и
-                        то
-                        же, когда я разрабатываю новые продукты для всего мира.
-                        I’m improving programming skills over a year. Frontend Deveopment and Creativity are the same
-                        when I’m developing new products for world. Development is sphere which increases productivity
-                        in my life.
-                        -->
-                    </p>
-                    <a class="download-btn"
-                        href="https://drive.google.com/file/d/1EAU2VAh5vanusT3Li9jIf8C4SgZGnl05/view?usp=sharing">
-                        <!-- Download Resume -->
-                        Скачать Резюме
-                    </a>
-                </div>
-                <img class="photo" src="images/photo.jpg" alt="">
+        <img class="photo" src="images/photo1.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="posts" class="posts">
+    <div class="bgcolor">
+      <div class="container">
+        <div class="posts__inner">
+          <div class="posts__heading">
+            <h2 class="posts__title">
+              Недавние посты
+            </h2>
+            <a class="posts__view" href="#">
+              Посмотреть все
+            </a>
+          </div>
+
+          <div class="posts__items">
+            <div class="post">
+              <h3 class="post__title">Откликаться на вакансии если не имеешь опыта</h3>
+              <div class="post__desc">
+                <span class="post__date">
+                  04 Июнь 2021
+                </span>
+                <span class="post__category">
+                  Вакансии, Новичок
+                </span>
+              </div>
+              <p class="post__text">Начал я откликаться на все вакансии html-верстальщика и Фронтэнд Разработчика. В
+                начале нашёл много вакансий, где не требовалось опыта работы или требовалось минимум год опыта в вёрстке
+                сайтов. Мои труд не был в пустую. Мне одна студия предложила тестовое задание. Это тестовое задание было
+                выполнено, но я сделал ошибку при передаче тестового задания и студия отказала мою кандитатуру. Из этой
+                ошибки я учёл такой урок, что перед тем передать проект и тестовое задание нудно тщательно проверить и
+                потом отправлть.
+              </p>
             </div>
-        </div>
-    </section>
+            <div class="post">
 
-    <section id="posts" class="posts">
-        <div class="bgcolor">
+              <h3 class="post__title">Как я начал программирование</h3>
+              <div class="post__desc">
+                <span class="post__date">
+                  28 Март 2021
+                </span>
+                <span class="post__category">
+                  Программирование, Новичок
+                </span>
+              </div>
 
-            <div class="container">
-                <div class="posts__inner">
-                    <div class="posts__heading">
-                        <h2 class="posts__title">
-                            <!-- Recent posts -->
-                            Недавние посты
-                        </h2>
-                        <a class="posts__view" href="#">
-                            <!-- View all -->
-                            Посмотреть все
-                        </a>
-                    </div>
-
-                    <div class="posts__items">
-                        <div class="post">
-
-                            <h3 class="post__title">Как я начал программирование</h3>
-                            <span class="post__date">
-                                <!-- 12 Feb 2020 -->
-                                28 Март 2021
-                            </span>
-                            <span class="post__category">
-                                <!-- Design, Pattern -->
-                                Программирование, Новичок
-                            </span>
-                            <p class="post__text">Мой путь к разработке сайтов началось в школьные времена. Мои первые
-                                шаги
-                                начались на уроке информатики. Всех нас обучали программированию, но не всем было это
-                                интересно кроме некоторых. </p>
-                        </div>
-                        <div class="post">
-                            <h3 class="post__title">С чего и как начать создавать сайты</h3>
-                            <span class="post__date">
-                                <!-- 12 Feb 2020 -->
-                                30 Март 2021
-                            </span>
-                            <span class="post__category">
-                                <!-- Design, Pattern -->
-                                Программирование, Сайт
-                            </span>
-                            <p class="post__text">В первую очередь для создания сайтов важны технические навыки. Если вы
-                                до этого тоже интересовались разработкой сайтов, то наверняка знаете, что сайты
-                                создаются такими основными технологиями, как Html&Css и Javascript.</p>
-                        </div>
-                    </div>
-                </div>
-
+              <p class="post__text">Мой путь к разработке сайтов началось в школьные времена. Мои первые
+                шаги
+                начались на уроке информатики. Всех нас обучали программированию, но не всем было это
+                интересно кроме некоторых. </p>
             </div>
-        </div>
-    </section>
-    <section id="works" class="works">
-        <div class="container">
-            <div class="works__inner">
-                <h2 class="works__title">
-                    <!-- Featured works -->
-                    Портфолио
-                </h2>
-                <div class="works__items">
-                    <div class="work">
-                        <a class="work__link" href="https://bekzoddeveloper.github.io/uzcars/">
-                            <img class="work__image" src="images/works__uzcars-mini.jpg" alt="">
-                        </a>
-                        <div class="work__desc">
-                            <a href="https://bekzoddeveloper.github.io/uzcars/" class="work__link">
-                                <h3 class="work__title">Вёрстка сайта по аренде люкс машин в Ташкенте </h3>
-                            </a>
-                            <span class="work__date">2020</span>
-                            <span class="work__tech">Вёрстка</span>
-                            <p class="work__text">Сверстал макет сайта занимающийся арендей качественных машин в
-                                Ташкенте. Разработке было затрачено 12-15 часов. Сайту установлено админ панель, по
-                                которой легко и просто редактировать изображения и контент сайта.</p>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="work">
-                        <img class="work__image" src="images/works__uzcars-mini.jpg" alt="">
-                        <div class="work__desc">
-                            <h3 class="work__title">Вёрстка сайта по аренде люкс машин в Ташкенте </h3>
-                            <span class="work__date">2020</span>
-                            <span class="work__tech">Вёрстка</span>
-                            <p class="work__text">Сверстал макет сайта занимающийся арендей качественных машин в
-                                Ташкенте. Разработке было затрачено 12-15 часов. Сайту установлено админ панель, по
-                                которой легко и просто редактировать изображения и контент сайта.</p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img class="work__image" src="images/works__uzcars-mini.jpg" alt="">
-                        <div class="work__desc">
-                            <h3 class="work__title">Вёрстка сайта по аренде люкс машин в Ташкенте </h3>
-                            <span class="work__date">2020</span>
-                            <span class="work__tech">Вёрстка</span>
-                            <p class="work__text">Сверстал макет сайта занимающийся арендей качественных машин в
-                                Ташкенте. Разработке было затрачено 12-15 часов. Сайту установлено админ панель, по
-                                которой легко и просто редактировать изображения и контент сайта.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="post">
+              <h3 class="post__title">С чего и как начать создавать сайты</h3>
+              <div class="post__desc">
+                <span class="post__date">
+                  30 Март 2021
+                </span>
+                <span class="post__category">
+                  Программирование, Сайт
+                </span>
+              </div>
+
+              <p class="post__text">В первую очередь для создания сайтов важны технические навыки. Если вы
+                до этого тоже интересовались разработкой сайтов, то наверняка знаете, что сайты
+                создаются такими основными технологиями, как Html&Css и Javascript.</p>
             </div>
+          </div>
         </div>
-        -->
-    </section>
 
-    <footer id="contacts" class="contacts">
-        <div class="container">
-            <div class="contacts__inner">
-                <div class="soc__links">
-                    <a class="soc__link" href="https://twitter.com/BekzodDeveloper">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="soc__link" href="https://www.instagram.com/bekzod.developer/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="soc__link" href="https://t.me/bekzoddeveloper">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
-                    <a class="soc__link" href="https://vk.com/bekzoddeveloper">
-                        <i class="fab fa-vk"></i>
-                    </a>
-                    <a class="soc__link" href="https://www.linkedin.com/in/bekzod-kholdarov-a405761a4/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-
-
-                </div>
-                <p class="copyright">Designed and Layouted by
-                    <a class="bekdev" href="">Bekzod Developer</a>
-                </p>
+      </div>
+    </div>
+  </section>
+  <section id="works" class="works">
+    <div class="container">
+      <div class="works__inner">
+        <h2 class="works__title">
+          Портфолио
+        </h2>
+        <div class="works__items">
+          <div class="work">
+            <a class="work__link" href="https://bekzoddeveloper.github.io/MagazinRadosti/">
+              <img class="work__image" src="images/work-2.png" alt="">
+            </a>
+            <div class="work__desc">
+              <a href="https://bekzoddeveloper.github.io/MagazinRadosti/" class="work__link">
+                <h3 class="work__title">Вёрстка мини магазина котов, которая предлагает купить кошек.</h3>
+              </a>
+              <span class="work__date">2020</span>
+              <span class="work__tech">Вёрстка</span>
+              <p class="work__text">Сверстал макет сайта занимающийся арендей качественных машин в
+                Ташкенте. Разработке было затрачено 12-15 часов. Сайту установлено админ панель, по
+                которой легко и просто редактировать изображения и контент сайта.</p>
             </div>
+          </div>
+          <div class="work">
+            <a class="work__link" href="https://bekzoddeveloper.github.io/uzcars/">
+              <img class="work__image" src="images/works__uzcars-mini.jpg" alt="">
+            </a>
+            <div class="work__desc">
+              <a href="https://bekzoddeveloper.github.io/uzcars/" class="work__link">
+                <h3 class="work__title">Вёрстка сайта по аренде люкс машин в Ташкенте </h3>
+              </a>
+              <span class="work__date">2020</span>
+              <span class="work__tech">Вёрстка</span>
+              <p class="work__text">Сверстал макет сайта занимающийся арендей качественных машин в
+                Ташкенте. Разработке было затрачено 12-15 часов. Сайту установлено админ панель, по
+                которой легко и просто редактировать изображения и контент сайта.</p>
+            </div>
+          </div>
+  </section>
+
+  <footer id="contacts" class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="soc__links">
+          <a class="soc__link" href="https://twitter.com/BekzodDeveloper">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="soc__link" href="https://www.instagram.com/bekzod.developer/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="soc__link" href="https://t.me/bekzoddeveloper">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a class="soc__link" href="https://vk.com/bekzoddeveloper">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a class="soc__link" href="https://www.linkedin.com/in/bekzod-kholdarov-a405761a4/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+
+
         </div>
-    </footer>
+        <p class="copyright">Designed and Layouted by
+          <a class="bekdev" href="">Bekzod Developer</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
