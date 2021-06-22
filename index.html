@@ -16,11 +16,12 @@
 </head>
 
 <body>
-  <!---->
   <header id="header" class="header">
     <div class="container">
       <div class="header__inner">
-        <img class="logo" src="" alt="">
+        <a class="logo__link" href="#">
+          <img class="logo" src="images/logo.png" alt="">
+        </a>
         <nav class="menu">
           <input type="checkbox" name="" id="check">
           <label id="menu__btn" for="check">
@@ -48,16 +49,19 @@
     <div class="container">
       <div class="main__inner">
         <div class="main__content">
-          <h1 class="main__title">
+          <h1 class="main__title main__title-white">
+            Привет, Я <span class="main__title-blue">Бекзод,</span>
+            <br>
+            <span class=" main__title-typed main__title-blue"></span>
+          </h1>
+          <!-- <h1 class="main__title">
             Привет, Я <span class="main__title-white">Бекзод</span>,
             <br>
             Фронтэнд <span class="main__title-white">Разработчик</span>
-
-          </h1>
+          </h1> -->
           <p class="main__text">
             Я в сфере программирования более чем год. Разработка - это сфера, которая
             увеличивает продуктивность моих работ и развивает меня в моей жизни.
-
           </p>
           <a class="download-btn"
             href="https://drive.google.com/file/d/1s1gVo8WsIfaskVxOrqhcJcd1FtnpFN53/view?usp=sharing">
@@ -76,14 +80,29 @@
         <div class="posts__inner">
           <div class="posts__heading">
             <h2 class="posts__title">
-              Недавние посты
+              Мои недавние посты
             </h2>
-            <a class="posts__view" href="#">
-              Посмотреть все
-            </a>
           </div>
 
           <div class="posts__items">
+            <div class="post">
+              <h3 class="post__title">Первый учебный сайт интегрированный на <span>WordPress.</span></h3>
+              <div class="post__desc">
+                <span class="post__date">
+                  22 Июнь 2021
+                </span>
+                <span class="post__category">
+                  Верстка, WordPress
+                </span>
+              </div>
+              <p class="post__text">
+                Со стороны посадка или интеграция свёрстанного сайта мне казалось сложным и не очень интересным. Но
+                посмотрев несколко видео на эту тему, понял, что это не лёгких процесс только в начале работы с ним. А
+                в
+                процессе работы с ним становилось уже интереснее и интереснее, так как она давала много возможностей для
+                тех, кто не разбирался в коде, но давала возможность легко могко менять контент сайта.
+              </p>
+            </div>
             <div class="post">
               <h3 class="post__title">Первый многостраничный сайт и какие навыки я получил.</h3>
               <div class="post__desc">
@@ -166,6 +185,26 @@
         </h2>
         <div class="works__items">
           <div class="work">
+            <a class="work__link" href="https://bekzoddeveloper.github.io/barberShop/">
+              <img class="work__image" src="images/work-4.jpg" alt="">
+            </a>
+            <div class="work__desc">
+              <a href="https://bekzoddeveloper.github.io/barberShop/" class="work__link">
+                <h3 class="work__title">Первый свёрстанный и интегрированный сайт на WordPress.</h3>
+              </a>
+              <span class="work__date">2021</span>
+              <span class="work__tech">Учебный проект </span>
+              <p class="work__text">Посадочеая страница Barber Shop, занимающаяся стрижкой мужских волос и бороды.
+                Выполнению данного сайта потребовало в общем 25-30 часов работы. Первые 10 часов ушло на вёрстку сайта с
+                применением БЭМ методологии, которая ускоряет процесс стилизации и делает понятливым для других
+                разработчиков. Так как это, был первым опытом с CMS системой WordPress - заняло чуть больше времени на
+                перенос сайта на эту систему. Оно заняло примерно 15-20 часов работы. В результате получил сайт, в
+                котором можно легко менять контент без знания какого-либо кода.</p>
+              <a href="https://bekzoddeveloper.github.io/barberShop/" class="work__link">Перейте на сайт
+                <span>-></span></a>
+            </div>
+          </div>
+          <div class="work">
             <a class="work__link" href="https://bekzoddeveloper.github.io/desire-page/">
               <img class="work__image" src="images/work-3.png" alt="">
             </a>
@@ -182,7 +221,8 @@
                 было разработано версия для использования сайта через ноутбуки и компьютеры. И на это потребовалось
                 около 30-35 часов. А во второй части разработки сайта было адатировано под мобильные устройства и
                 планшеты. Для адаптации данного сайта было потрачено 25 часов работы.</p>
-              <a href="https://bekzoddeveloper.github.io/desire-page/" class="work__link">Перейте к сайту -></a>
+              <a href="https://bekzoddeveloper.github.io/desire-page/" class="work__link">Перейте на сайт
+                <span>-></span></a>
             </div>
           </div>
           <div class="work">
@@ -199,7 +239,8 @@
                 узнать мои навыки в вёрстке и работе с языком программирования Javascript. Разработке данного сайта было
                 потрачено около 12-14 часов, так как в задании нужно было добавить некий интерактив в языке Javascript и
                 с библеотекой jQuery. </p>
-              <a href="https://bekzoddeveloper.github.io/MagazinRadosti/" class="work__link">Перейте к сайту -></a>
+              <a href="https://bekzoddeveloper.github.io/MagazinRadosti/" class="work__link">Перейте на сайт
+                <span>-></span></a>
             </div>
           </div>
           <div class="work">
@@ -216,7 +257,7 @@
                 машин. Вёрстке было потрачено около 10-12 часов. Кроме языка разметки и таблиц каскадных стилей, было
                 использовано также библиотека jQuery, чтобы
                 слайдеры в ней корректно работали.</p>
-              <a href="https://bekzoddeveloper.github.io/uzcars/" class="work__link">Перейте к сайту -></a>
+              <a href="https://bekzoddeveloper.github.io/uzcars/" class="work__link">Перейте на сайт <span>-></span></a>
 
             </div>
           </div>
@@ -245,13 +286,28 @@
 
 
         </div>
-        <p class="copyright">Designed and Layouted by
-          <a class="bekdev" href="">Bekzod Developer</a>
+        <p class="copyright">Created by
+          <a class="bekdev" href="#">Bekzod Developer</a>
         </p>
       </div>
     </div>
   </footer>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/typed.js"></script>
+  <script>
+    var typed = new Typed('.main__title-typed', {
+      strings: [
+        "Фронтэнд Разработчик",
+        "HTML-верстальщик",
+        "Фрилансер"
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
 
+  <!-- <script src="js/main.min.js"></script> -->
 </body>
 
 </html>
